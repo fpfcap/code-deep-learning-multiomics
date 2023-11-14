@@ -1,6 +1,6 @@
 setwd("~/Desktop/song/pca_project")
 
-mrna<-read.table("TCGA_PCa_mRNA_cancer_count.txt",header = T)
+mrna<-read.table("GA_PCa_mRNA_cancer_count.txt",header = T)
 mrna <- mrna[!duplicated(mrna[,1]), ]
 rownames(mrna)<-mrna$Tags
 mrna<-mrna[,-(1)]
